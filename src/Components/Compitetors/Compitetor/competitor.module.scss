@@ -1,0 +1,58 @@
+@use  '../../../Variables.scss' as mixin;
+
+.competitor{
+   position: relative;
+   width: 100%;
+   height:500px ;
+
+   .info{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    .name{
+        line-height: 32px;
+        font-size: 28px;
+        font-weight: 500;
+
+    .state{
+        line-height: 32px;
+        font-size: 20px;
+
+    }
+
+    .vote_counter{
+        font-size: 1.25rem;
+    }
+
+    }
+   }
+
+   .vote{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: mixin.$secondryColor;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    .vote_icon{
+        font-size: 35px;
+        color: mixin.$primaryColor;
+    }
+
+   }
+}
